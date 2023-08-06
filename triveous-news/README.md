@@ -1,34 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Triveous News  
 
-## Getting Started
+## Overview
 
-First, run the development server:
+This project aims to develop a News app using Next.js, a React framework for server-side rendering, with Firebase for authentication and data storage. The app will allow users to create accounts, log in, view the latest news articles, read full article details, mark articles as favorites, and provide offline support for previously fetched articles.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Project Timeline
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The project will be executed using an Agile development approach, with a one-day timeframe for completion. The development tasks have been organized into a single sprint.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Sprint Details
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Sprint 1 (1 day)
 
-## Learn More
+- Set up the Next.js project and integrate Firebase for user authentication.
 
-To learn more about Next.js, take a look at the following resources:
+- Implement login and registration pages for user account management.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Integrate the open-source news API to fetch the latest news articles.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Display news articles in a list view for users.
 
-## Deploy on Vercel
+- Implement the news detail view with a full-screen display of the article content.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Allow users to mark articles as favorites and store their preferences in Firebase.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Implement state management using React Context or Redux.
+
+### Time Estimate
+
+| **User Stories**                                                       | **Time Estimate (hours)** |
+|----------------------------------------------------------------------|--------------------------|
+| Set up Next.js project and integrate Firebase for authentication    | 2                        |
+| Implement login and registration pages                                | 3                        |
+| Integrate the open-source news API and display news articles         | 3                        |
+| Implement news detail view with a full-screen display                | 3                        |
+| Allow users to mark articles as favorites and store preferences      | 2                        |
+| Implement state management using React Context or Redux              | 2                        |
+| **Total (hours)**                                                     | **15**                   |
+
+
+## Testing and Deployment
+
+Thorough testing will be conducted throughout the development process to identify and fix any bugs. A bug-fixing period is included in the sprint timeline. After successful testing, the app will be deployed to a suitable hosting platform.
+
+## Risks and Mitigation
+
+Given the tight timeframe, potential risks include:
+
+- **Scope Creep**: To mitigate this risk, the team will adhere strictly to the planned features and focus only on the essential functionality.
+
+- **Technical Challenges**: Rapid communication among team members will be encouraged to address any technical issues promptly.
+
+- **Time Constraints**: Continuous progress tracking will help identify any potential delays, and adjustments will be made accordingly.
+
+## Conclusion
+
+By following the Agile methodology, we aim to deliver a functional News app with the core features within the one-day timeframe. Collaboration, efficient development, and a focus on essential functionalities will be key to the success of this project.
+
+Let's get started and build an impressive News app! 📰🚀

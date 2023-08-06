@@ -6,14 +6,14 @@ import Container from '@mui/material/Container';
 const Navbar = () => {
 
     return (
-        <AppBar component="nav" sx={{ backgroundColor: '#14248A' }}>
+        <AppBar component="nav" sx={{ backgroundColor: '#28262C' }}>
             <Container sx={{ flexGrow: 1, flexDirection:'row', alignContent:'space-between' }}>
                 <Grid container spacing={3} sx={{flexDirection:'row', alignContent:'space-between' }}>
                     <Grid item>
-                        <Typography variant="h3" sx={{ mt: '5px', ml: '5px', color: '#F9F5FF' }}>Triveous News</Typography>
+                        <Typography variant="h3" sx={{ mt: '5px', ml: '5px', color: '#998FC7' }}>Triveous News</Typography>
                     </Grid>
                     <Grid item>
-                        <Button sx={{ backgroundColor: '#D4C2FC', mt:'13px'}}>Login</Button>
+                        <Button sx={{ backgroundColor: '#998FC7', color:'#F9F5FF', mt:'13px'}}>Login</Button>
                     </Grid>
 
                 </Grid>

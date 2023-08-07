@@ -78,28 +78,41 @@
   padding: 0;
   margin: 0;
 }
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  margin: 0;
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+    -45deg,
+    rgba(var(--background-start-rgb), 0.5),
+    rgba(var(--background-end-rgb), 0.5)
+  );
+  background-size: 200% 200%;
+  animation: moveGradient 10s infinite linear;
+}
 
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(-45deg, rgba(var(--background-start-rgb), 0.5), rgba(var(--background-end-rgb), 0.5));
-  background-size: 200% 200%; /* Set larger background size for animation */
-  animation: moveGradient 10s infinite linear; /* Apply animation to the background */
-}
 
-@keyframes moveGradient {
-  0% {
-    background-position: 0% 0%; /* Initial background position */
-  }
-  100% {
-    background-position: 100% 100%; /* Final background position */
-  }
-}
 
 a {
   color: inherit;

@@ -87,7 +87,18 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: #F9F5FF
+  background: linear-gradient(-45deg, rgba(var(--background-start-rgb), 0.5), rgba(var(--background-end-rgb), 0.5));
+  background-size: 200% 200%; /* Set larger background size for animation */
+  animation: moveGradient 10s infinite linear; /* Apply animation to the background */
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 0%; /* Initial background position */
+  }
+  100% {
+    background-position: 100% 100%; /* Final background position */
+  }
 }
 
 a {

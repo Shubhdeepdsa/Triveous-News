@@ -7,7 +7,8 @@ import { useUserAuth } from "../context/AuthContext";
 const Navbar = () => {
     const  {setGridColoumn} = useUserAuth()
     let handleGridChange = (value) =>  {
-
+        let column = Math.floor(12 / value)
+        setGridColoumn(column)
     }
     return (
         <AppBar component="nav" sx={{ backgroundColor: '#28262C' }}>

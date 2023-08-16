@@ -6,13 +6,13 @@ import { Card, CardContent, Typography, CardMedia, IconButton } from '@mui/mater
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ArticlePopup from './ArticlePopup';
 const NewsCard = () => {
-    const { news, selectArticle } = useUserAuth();
+    const { news, selectArticle, gridColumn } = useUserAuth();
 
     return (
         <>
             {news.map((ele, index) => {
                 return (
-                    <Grid key={index} item xs={12} md={6}>
+                    <Grid key={index} item xs={gridColumn} md={gridColumn}>
                         <Box
                             sx={{
                                 p: 2,

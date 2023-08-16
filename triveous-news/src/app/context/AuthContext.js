@@ -8,12 +8,13 @@ const NEWS_URL = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=d93d0ca
 export const AuthContextProvider = ({ children }) => {
     const [news, setNews] = useState(null);
     const [selectedArticle, setSelectedArticle] = useState(null);
-
+    const [gridColumn, setGridColoumn] = useState(null)
     useEffect(() => {
         const fetchNewsData = async () => {
             try {
                 const response = await axios.get(NEWS_URL);
                 setNews(response.data.articles);
+                setGridColoumn(12)
             } catch (error) {
                 console.error(error.message);
             }
@@ -30,7 +31,7 @@ export const AuthContextProvider = ({ children }) => {
     };
 
     return (
-        <AuthContext.Provider value={{ news, selectArticle, closeArticle }}>{children}</AuthContext.Provider>
+        <AuthContext.Provider value={{ news, selectArticle, closeArticle, gridColumn, setGridColoumn }}>{children}</AuthContext.Provider>
     );
 };
 
